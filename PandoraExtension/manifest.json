@@ -1,0 +1,17 @@
+{
+  "name": "PandoraExtensions",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "This is to enable plugging additional music subscription services into Pandora",
+
+  "permissions": [
+    "http://www.pandora.com/"
+  ],
+  "content_scripts": [
+    {
+	   "matches": ["http://www.pandora.com/*"],	   
+	   "js" : ["AddButton.js"],
+	   "run_at" : "document_end"
+	}
+  ]
+}
